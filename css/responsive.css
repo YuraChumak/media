@@ -1,0 +1,114 @@
+﻿@media (max-width:1300px){
+    header form {
+        margin-right: -174px;
+        right: 50%;
+        top: 100px;
+    }
+    nav ul li,nav{
+        margin-bottom: 5px;
+    }
+    .topics li.tv{
+        padding-right: 110px;
+    }
+    footer .col-md-3{
+        float: left;
+        width: 25%;
+    }
+    .topics li:last-child {
+        float: none;
+    }
+    .logo{
+        margin: 50px auto;
+    }
+
+}
+@media (max-width:1200px){
+    .img_box{
+        background: url("../img/advert_1.png") no-repeat 0 0 /100%;
+    }
+    .second .img_box {
+        background: url("../img/advert_2.png") no-repeat 0 0 /100%;
+    }
+    .third .img_box {
+        background: url("../img/advert_3.png") no-repeat 0 0 /100%;
+    }
+    .columns .col-md-3{
+        float: left;
+        margin: 0;
+        width: 50%;
+    }
+    nav ul li{
+        display: block;
+    }
+    section{
+        margin-bottom: 600px;
+    }
+    .blog .col-md-6.right,
+    .sign_up .col-md-6 + .col-md-6{
+        border: 0;
+    }
+}
+@media (max-width:800px){
+    footer .col-md-3{
+        width: 50%;
+    }
+    footer .soc{
+        margin-bottom: 50px;
+    }
+    .columns .col-md-3{
+        margin-bottom: 10px;
+    }
+    .columns .col-md-3.line_up{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:600px){
+    .subscribe{
+        margin-right: -38px;
+        right: 50%;
+        top: 8%;
+    }
+    .description {
+        padding: 0 40px 40px;
+    }
+    .sign_up input{
+        margin-right: 0;
+        width: 100%;
+    }
+    .sign_up .col-md-6 + .col-md-6 {
+        padding: 0 50px;
+    }
+    .footer_logo{
+        display: none;
+    }
+    footer .col-md-3 + .col-md-3 {
+        padding-right: 10px;
+    }
+    .columns .col-md-3{
+        width: 100%;
+    }
+    section {
+        margin-bottom: 750px;
+    }
+}
+@media (max-width:400px){
+    .creator,
+    .log{
+        float: none;
+        text-align: center;
+    }
+    .logo{
+        display: none;
+    }
+    nav{
+        margin-top: 80px;
+    }
+    header form{
+        margin-right: -80px;
+        top:40px;
+    }
+    .search{
+        width: 165px;
+    }
+
+}

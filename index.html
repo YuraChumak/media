@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="Nlalflafl">
+    <meta name="keywords" content="Fsdfsf">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    </head>
+<script type="text/javascript">
+    function validate(){
+        //Считаем значения из полей name и email в переменные x и y
+        var x=document.forms["form"]["name"].value;
+        var y=document.forms["form"]["email"].value;
+        //Если поле name пустое выведем сообщение и предотвратим отправку формы
+        if (x.length==0){
+            document.getElementById("namef").innerHTML="*данное поле обязательно для
+            заполнения";
+            return false;
+        }
+        //Если поле email пустое выведем сообщение и предотвратим отправку формы
+        if (y.length==0){
+            document.getElementById("emailf").innerHTML="*данное поле обязательно для
+            заполнения";
+            return false;
+        }
+        //Проверим содержит ли значение введенное в поле email символы @ и .
+        at=y.indexOf("@");
+        dot=y.indexOf(".");
+        //Если поле не содержит эти символы знач email введен не верно
+        if (at<1 || dot <1){
+            document.getElementById("emailf").innerHTML="*email введен не верно";
+            return false;
+        }
+    }
+</script>
+<body>
+    <header>
+        <div class="log_menu">
+            <div class="container">
+                <div class="creator">
+                    <a href="#">Jack Myers</a>
+                    <a href="#">MyersBizNet</a>
+                </div>
+                <div class="log">
+                    <a href="#">Sign up</a>
+                    <a href="#">Sign in</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="container">
+                <a class="logo" href="#">logo</a>
+                <form action="">
+                    <input class="search" placeholder="Search">
+                </form>
+                <nav>
+                    <ul class="list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Channels</a>
+                            <ul class="drop_menu">
+                                <li>
+                                    <a href="#">channel 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">channel 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">channel 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">channel 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Meet the writers</a>
+                            <ul class="drop_menu">
+                                <li>
+                                    <a href="#">writter 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">writter 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">writter 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">writter 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">My stories<span>20</span></a>
+                            <ul class="drop_menu">
+                                <li>
+                                    <a href="#">story 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">story 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">story 3</a>
+                                </li>
+                                <li>
+                                    <a href="#">story 4</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#">Readers</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="list social">
+                    <li>
+                        <a class="facebook" href="#">facebook</a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="#">twitter</a>
+                    </li>
+                    <li>
+                        <a class="google_plus" href="#">google_plus</a>
+                    </li>
+                    <li>
+                        <a class="linked_in" href="#">linked_in</a>
+                    </li>
+                    <li>
+                        <a class="youtube" href="#">youtube</a>
+                    </li>
+                    <li>
+                        <a class="vimeo" href="#">vimeo</a>
+                    </li>
+                    <li class="last">
+                        <a class="mail" href="#">mail</a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <ul class="list topics">
+                <li>LATEST <b>TOPICS</b></li>
+                <li>
+                    <a href="#">big data</a>
+                </li>
+                <li>
+                    <a href="#">programmatic advertising</a>
+                </li>
+                <li>
+                    <a href="#">social media</a>
+                </li>
+                <li>
+                    <a href="#">advertising</a>
+                </li>
+                <li class="tv">
+                    <a href="#">television</a>
+                </li>
+                <li>
+                    <a href="#">big data</a>
+                </li>
+                <li>
+                    <a href="#">programmatic advertising</a>
+                </li>
+                <li>
+                    <a href="#">all topics</a>
+                </li>
+            </ul>
+            <section>
+                <div class="blog">
+                    <h2><b>Jack Myers</b> ThinkTank</h2>
+                    <a class="subscribe" href="#">Subscribe</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="article_img">
+
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3>IRWIN GOTLEB'S 2005 Future Vision</h3>
+                                    <div class="comments">20 comments</div>
+                                    <p>On October 21, at the Pierre Hotel in New York, one of the media industry's true visionaries, and a mentor to many, will be honored by the IRTS at the annual Hall of Mentorship dinner, along with BET Chairman/CEO Debra L. Lee.  <a href="#">Read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 right">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Classic Jack: Keeping You Ahead of the (NY) Times</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Redux: Are Marketing Zombies Leading Our Industry?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Is Netflix' House of Cards and Binge Viewing the Future of TV?</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Twitter: We Gave You the Heads Up in May 2007!</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="img_box" href="#">
+                                        <div class="hidden_text">
+                                            Advertising vs. Below-the-Line Shopper Marketing: The Economics
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog second">
+                    <h2><b>JShelly Palmer</b> Report</h2>
+                    <a class="subscribe" href="#">Subscribe</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="article_img"></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3>A Conference I Would Personally Like To Attend - Shelly Palmer</h3>
+                                    <div class="comments">30 comments</div>
+                                    <p>If you wanted to, you could attend some kind of trade event every few days. There are so many. How do you choose the conferences you "must" attend?      <a href="#">Read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 right">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>
+                                            <a href="#">BeamPro: From Parlor Trick to Paradigm Shift</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Have an iPhone 6? Apple says, "Bend Over"</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Apple Watch and the iPhone 6: Things to Ponder</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">My Banned Word Holiday Rant</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="img_box" href="#">
+                                        <div class="hidden_text">
+                                            Advertising vs. Below-the-Line Shopper Marketing: The Economics
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog third">
+                    <h2><b>Brian Wieser</b> Analysis</h2>
+                    <a class="subscribe" href="#">Subscribe</a>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="article_img"></div>
+                                </div>
+                                <div class="col-md-8">
+                                    <h3>Wall St Speaks Out : TV's Ad
+                                        Revenue Growth Opportunities</h3>
+                                    <div class="comments">10 comments</div>
+                                    <p>Our view on the state of TV advertising – that there is not some meaningfully different secular change going on, that conditions are more impacted by broader economic conditions than anything else and that growth in digital advertising is primarily.      <a href="#">Read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 right">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                        <li>
+                                            <a href="#">BeamPro: From Parlor Trick to Paradigm Shift</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Have an iPhone 6? Apple says, "Bend Over"</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Apple Watch and the iPhone 6: Things to Ponder</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">My Banned Word Holiday Rant</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="img_box" href="#">
+                                        <div class="hidden_text">
+                                            Advertising vs. Below-the-Line Shopper Marketing: The Economics
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-wrap" title="appearance">
+                    <div class="columns row">
+                        <div class="col-md-3">
+                            <div class="col_container">
+                                <div class="title">
+                                    consumers in motion
+                                    <div>by Dan Hodges</div>
+                                </div>
+                            </div>
+                            <div class="img_box first">
+                                <div class="hidden_text">
+                                    <div class="title">Mastering the Mobile Customer Journey</div>
+                                    <div>Every so often there is a paradigm shift so big that it changes everything. <a href="#">Read more</a> </div>
+                                </div>
+                            </div>
+                            <div class="col_container">
+                                <ul class="list">
+                                    <li>
+                                        <div class="title">The 2015 Mobile World Congress Mash-Up </div>
+                                        <div>If you are an executive who wants to understand the impact of mobile on the customer's journey, you should consider attending the Mobile World Congress next March.  <a href="#">Read more</a> </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">Lessons of the iPhone: Learn to Identify the Next Big Trend </div>
+                                        <div>The market frequently misses key trends. Take the iPhone for example. Steve Jobs’ vision was ahead of his time.  <a href="#">Read more</a> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 line_up">
+                            <div class="col_container">
+                                <div class="title second">
+                                    mouth matters word
+                                    <div>by Ed Keller</div>
+                                </div>
+                            </div>
+                            <div class="img_box second">
+                                <div class="hidden_text">
+                                    <div class="title">Mastering the Mobile Customer Journey</div>
+                                    <div>Every so often there is a paradigm shift so big that it changes everything. <a href="#">Read more</a> </div>
+                                </div>
+                            </div>
+                            <div class="col_container">
+                                <ul class="list">
+                                    <li>
+                                        <div class="title">Social TV: Juggernaut or Overhyped? </div>
+                                        <div>If you are an executive who wants to understand the impact of mobile on the customer's journey, you should consider attending the Mobile World Congress next March.  <a href="#">Read more</a> </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">Feel Something Say Something: How Emotion and Word of Mouth are Linked </div>
+                                        <div>The market frequently misses key trends. Take the iPhone for example.  <a href="#">Read more</a> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col_container">
+                                <div class="title third">
+                                    dstillery
+                                    <div>by Claudia Perlich</div>
+                                </div>
+                            </div>
+                            <div class="img_box third">
+                                <div class="hidden_text">
+                                    <div class="title">Mastering the Mobile Customer Journey</div>
+                                    <div>Every so often there is a paradigm shift so big that it changes everything. <a href="#">Read more</a> </div>
+                                </div>
+                            </div>
+                            <div class="col_container">
+                                <ul class="list">
+                                    <li>
+                                        <div class="title">The 2015 Mobile World Congress Mash-Up </div>
+                                        <div>If you are an executive who wants to understand the impact of mobile on the customer's journey, you should consider attending the Mobile World Congress next March.  <a href="#">Read more</a> </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">Lessons of the iPhone: Learn to Identify the Next Big Trend </div>
+                                        <div>The market frequently misses key trends. Take the iPhone for example. Steve Jobs’ vision was ahead of his time.  <a href="#">Read more</a> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="col_container">
+                                <div class="title fourth">
+                                    consumers in motion
+                                    <div>by Matt Brown</div>
+                                </div>
+                            </div>
+                            <div class="img_box fourth">
+                                <div class="hidden_text">
+                                    <div class="title">Mastering the Mobile Customer Journey</div>
+                                    <div>Every so often there is a paradigm shift so big that it changes everything. <a href="#">Read more</a> </div>
+                                </div>
+                            </div>
+                            <div class="col_container">
+                                <ul class="list">
+                                    <li>
+                                        <div class="title">The 2015 Mobile World Congress Mash-Up </div>
+                                        <div>If you are an executive who wants to understand the impact of mobile on the customer's journey, you should consider attending the Mobile World Congress next March.  <a href="#">Read more</a> </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">Lessons of the iPhone: Learn to Identify the Next Big Trend </div>
+                                        <div>The market frequently misses key trends. Take the iPhone for example. Steve Jobs’ vision was ahead of his time.  <a href="#">Read more</a> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sign_up" title="top_side">
+                    <h2>Sign Up</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3>Already a member? <a href="#">Log In</a></h3>
+                            <div class="description">You and your ideas are welcome here. When you join MediaVillage, you can leave comments, save talks to watch later, track MV lessons and generally be in good company.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <form action="">
+                                <input name="name" type="text" placeholder="First name">
+                                <input name="name" type="text" id="namef" placeholder="Second name">
+                                <input class="big" id="emailf" type="email" placeholder="E-mail">
+                                <input class="big" type="number" placeholder="Tel. number">
+                                <button class="btn" type="button">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <a class="footer_logo" href="#">
+                <div>Media<span>village</span></div>
+                <div>Only the freshest news, right when you need them</div>
+            </a>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="title">company</div>
+                    <ul class="list">
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Site Map</a>
+                        </li>
+                        <li>
+                            <a href="#">Private Police</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 soc">
+                    <div class="title">follow us</div>
+                    <ul class="list social">
+                        <li>
+                            <a class="facebook" href="#">facebook</a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="#">twitter</a>
+                        </li>
+                        <li>
+                            <a class="google_plus" href="#">google_plus</a>
+                        </li>
+                        <li>
+                            <a class="linked_in" href="#">linked_in</a>
+                        </li>
+                        <li>
+                            <a class="youtube" href="#">youtube</a>
+                        </li>
+                        <li>
+                            <a class="vimeo" href="#">vimeo</a>
+                        </li>
+                        <li>
+                            <a class="mail" href="#">mail</a>
+                        </li>
+                        <li class="last">
+                            <a class="lamp" href="#">lamp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="title">get in touch</div>
+                    <div>We'd like to hear from you! Call us,send us an email or talk to sales.</div>
+                    <a class="button" href="#">Contact Us</a>
+                </div>
+                <div class="col-md-3">
+                    <div class="title">get the latest news</div>
+                    <div>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</div>
+                    <a class="button" href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            function getCoords(elem) {
+                var box = elem.getBoundingClientRect();
+
+                var body = document.body;
+                var docElem = document.documentElement;
+
+                var scrollTop = window.pageYOffset || docElem.scrollTop || body.scrollTop;
+                var scrollLeft = window.pageXOffset || docElem.scrollLeft || body.scrollLeft;
+
+                var clientTop = docElem.clientTop || body.clientTop || 0;
+                var clientLeft = docElem.clientLeft || body.clientLeft || 0;
+
+                var top  = box.top +  scrollTop - clientTop;
+                var left = box.left + scrollLeft - clientLeft;
+
+                return { top: Math.round(top), left: Math.round(left) };
+            }
+            /**
+             * Перевіряємо елемент чи попадає у видиму частину екрану
+             * Для попадяння достатньо, щоб верхня або нижня границя елемента була видна.
+             */
+            function isVisible(elem) {
+
+                var coords = getCoords(elem);
+                var windowTop = window.pageYOffset || document.documentElement.scrollTop;
+                var windowBottom = windowTop + document.documentElement.clientHeight;
+
+                coords.bottom = coords.top + elem.offsetHeight;
+
+                // Верхея границя elem попала у виидиму частину АБО нижня границя видима
+                var topVisible = coords.top > windowTop && coords.top < windowBottom;
+                var bottomVisible = coords.bottom < windowBottom && coords.bottom > windowTop;
+
+                return topVisible || bottomVisible;
+            }
+            function showVisible() {
+                var divs = document.getElementsByTagName('div');
+                for(var b=0; b < divs.length; b++) {
+                    var div = divs[b];
+                    var title = div.getAttribute('title');
+                    if (!title) continue;
+                    if (isVisible(div)) {
+                        div.className = div.className + ' ' + title;
+                        div.setAttribute('title', '');
+                    }
+                }
+
+            }
+
+            window.onload = showVisible;
+            window.onscroll = showVisible;
+            showVisible();
+        });
+    </script>
+</body>
+</html>
